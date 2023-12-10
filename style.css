@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.643;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #79787f;
+    text-transform: none;
+}
+
+header>section {
+    /*background-color: #01193F;*/
+    padding: 12px 0;
+}
+
+header article {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header div {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+header div p {
+    padding-left: 12px;
+    color: #79787f;
+}
+
+header div:first-child p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+header div {
+    color: #1E1D24;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42em;
+}
+
+header div i {
+    font-size: 32px;
+    color: #FB5A0F;
+}
+
+header article button {
+    border: #FB5A0F;
+    padding: 0 10px;
+    background-color: #FB5A0F;
+}
+
+header article button * {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+header article button:hover {
+    border: #1E1D24;
+    background-color: #1E1D24;
+    color: white;
+}
+
+/* main */
+main {
+    overflow: auto;
+}
+
+/* nav */
+.navbar {
+    background-color: #FB5A0F;
+}
+
+.bar {
+    display: flex;
+}
+
+.bar {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bar article {
+    height: 60.391px;
+    padding: auto;
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation {
+    width: 70%;
+}
+
+.search-icon {
+    font-weight: 400;
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    color: white;
+}
+
+.search-icon div i:hover {
+    color: #1E1D24;
+}
+
+.main-navigation nav {
+    display: flex;
+}
+
+.main-navigation nav ul {
+    list-style-type: none;
+    color: white;
+    margin-right: 4px;
+    padding: 10px 15px;
+}
+
+.main-navigation nav ul:hover {
+    list-style-type: none;
+    background-color: white;
+    color: #FB5A0F;
+    margin-right: 4px;
+    padding: 10px 15px;
+}
+
+.main-navigation nav ul:first-child {
+    background-color: white;
+    color: #FB5A0F;
+}
+
+.main-navigation nav ul.has-submenu {
+    position: relative;
+}
+
+.main-navigation nav ul.has-submenu:hover .submenu {
+    display: block;
+}
+
+.main-navigation nav ul .submenu {
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1E1D24;
+    color: #79787f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.main-navigation nav ul .submenu li {
+    padding: 10px 0;
+
+}
+
+.main-navigation nav ul .submenu li:hover {
+    color: #FB5A0F;
+}
+
+.bar article:last-of-type div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* nav end */
+
+/* slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 537px;
+    overflow: auto;
+}
+
+.slider-container {
+    position: relative;
+    height: 537px;
+    margin: auto;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide .text {
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+}
+
+.text {
+    position: relative;
+    padding: 20px 40px 60px 40px;
+    width: 50%;
+    color: #fff;
+    font-size: 24px;
+    background-color: #1E1D24E6;
+}
+
+.text h1 {
+    font-size: 42px;
+}
+
+.text h3 {
+    font-size: 18px;
+}
+
+.text h4 {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.navigation-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 50px;
+}
+
+.arrow {
+    padding: 10px 20px;
+    border-radius: 100%;
+    background-color: #fff;
+    font-size: 24px;
+    color: #1E1D24;
+    cursor: pointer;
+}
+.arrow:hover {
+    background-color: #FB5A0F;
+    color: #fff;
+}
+
+.text button {
+    position: absolute;
+    padding: 10px;
+    border: #fff;
+    text-decoration: none;
+    background-color: #fff;
+    z-index: 4;
+}
+
+.text button:hover {
+    background-color: #FB5A0F;
+    color: #fff;
+}
+
+.text button:last-child {
+    left: 250px;
+}
+
+.text button a {
+    text-decoration: none;
+    color: #FB5A0F;
+}
+
+.text button a:hover {
+    color: #fff;
+}
+
+
+
+/* slider end */
+
+
+
+
+/* main end */
