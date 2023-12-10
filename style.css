@@ -250,6 +250,7 @@ main {
     color: #1E1D24;
     cursor: pointer;
 }
+
 .arrow:hover {
     background-color: #FB5A0F;
     color: #fff;
@@ -285,8 +286,37 @@ main {
 
 
 /* slider end */
+/* solution */
+.solutions {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 80px;
+}
+.title{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+.card div {
+    width: 400px;
+}
+
+.solutions article h1 {
+    font-size: 32px;
+}
+
+.solutions article p {
+    font-size: 18px;
+}
 
 
+/* solution end*/
 
 
 /* main end */
