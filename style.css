@@ -292,19 +292,42 @@ main {
     margin: auto;
     padding-bottom: 80px;
 }
-.title{
+
+.title {
     display: block;
     justify-content: center;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 25px;
 }
+
 .card {
     display: flex;
     justify-content: space-around;
 }
-.card div {
+
+.Text_card {
+    color: #fff;
+    width: 350px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.card>div {
+    position: relative;
     width: 400px;
+}
+.Text_card a{
+    text-decoration: none;
+    padding: 15px;
+    background-color: #FB5A0F;
+    color: #fff;
+}
+.Text_card a:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #FB5A0F;
 }
 
 .solutions article h1 {
