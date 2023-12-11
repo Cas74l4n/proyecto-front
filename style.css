@@ -16,8 +16,7 @@ body {
 }
 
 header>section {
-    /*background-color: #01193F;*/
-    padding: 12px 0;
+    padding: 20px 0;
 }
 
 header article {
@@ -376,13 +375,19 @@ main {
     background-color: #f6f6f6;
 }
 
-.WhatWeDo section {
+.WhatWeDo section  {
     max-width: 1200px;
     margin: auto;
 }
 
 .WhatWeDo article:first-child h1 {
-    color: #1e1d24;
+    color: #1E1D24;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.344em;
+    letter-spacing: 0.64px;
+    text-align: center;
     padding-bottom: 40px;
 }
 
@@ -395,17 +400,19 @@ main {
     border-radius: 100%;
     font-size: 32px;
     padding: 13px;
-    margin-bottom: 70px;
+    width: 58px;
+    height: 58px;
     margin-right: 20px;
 }
 
 .card_check i:hover {
-    margin-right: 26px;
+    margin-right: 28px;
     line-height: 32px;
     border-radius: 100%;
     font-size: 32px;
     padding: 10px;
-    margin-bottom: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .card_check {
