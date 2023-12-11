@@ -217,6 +217,7 @@ main {
     color: #fff;
     font-size: 24px;
     background-color: #1E1D24E6;
+    z-index: 3;
 }
 
 .text h1 {
@@ -262,16 +263,16 @@ main {
     border: #fff;
     text-decoration: none;
     background-color: #fff;
-    z-index: 4;
+    z-index: 999;
 }
 
-.text button:hover {
+.boton a:hover {
     background-color: #FB5A0F;
     color: #fff;
 }
 
 .text button:last-child {
-    left: 250px;
+    left: 280px;
 }
 
 .text button a {
@@ -304,27 +305,55 @@ main {
 .card {
     display: flex;
     justify-content: space-around;
-}
-
-.Text_card {
-    color: #fff;
-    width: 350px;
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    position: relative;
 }
 
 .card>div {
     position: relative;
     width: 400px;
 }
-.Text_card a{
+
+.Text_card {
+    color: #fff;
+    width: 280px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 2;
+    transition: opacity 0.3s;
+}
+
+.card div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(90deg, #FC5A0A 0%, #100E0F00 100%);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card div:hover .Text_card {
+    opacity: 1;
+}
+
+.card div:hover::before {
+    opacity: 1;
+}
+
+.Text_card a {
+    position: absolute;
     text-decoration: none;
+    top: 100%;
     padding: 15px;
     background-color: #FB5A0F;
     color: #fff;
 }
-.Text_card a:hover{
+
+.Text_card a:hover {
     text-decoration: none;
     background-color: #fff;
     color: #FB5A0F;
