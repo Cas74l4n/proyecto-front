@@ -157,7 +157,7 @@ main {
     background-color: #1E1D24;
     color: #79787f;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1;
+    z-index: 999;
 }
 
 .main-navigation nav ul .submenu li {
@@ -182,6 +182,7 @@ main {
     width: 100%;
     height: 537px;
     overflow: auto;
+    z-index: 1;
 }
 
 .slider-container {
@@ -189,7 +190,7 @@ main {
     height: 537px;
     margin: auto;
     overflow: hidden;
-    z-index: -2;
+    z-index: 99;
 }
 
 .slide img {
@@ -211,8 +212,8 @@ main {
 
 .text {
     position: relative;
-    padding: 20px 40px 60px 40px;
-    width: 50%;
+    padding: 20px 130px 60px 40px;
+    width: 28%;
     color: #fff;
     font-size: 24px;
     background-color: #1E1D24E6;
@@ -240,6 +241,7 @@ main {
     justify-content: space-between;
     transform: translateY(-50%);
     padding: 0 50px;
+    z-index: 999;
 }
 
 .arrow {
@@ -265,21 +267,29 @@ main {
     z-index: 999;
 }
 
-.boton a:hover {
-    background-color: #FB5A0F;
-    color: #fff;
+.text button {
+    text-decoration: none;
+    background-color: #fff;
 }
 
 .text button:last-child {
     left: 280px;
 }
 
-.text button a {
+.text a {
+    margin: 20px 10px;
     text-decoration: none;
     color: #FB5A0F;
 }
 
-.text button a:hover {
+/* .text button a:hover {
+    color: #fff;
+}  */
+.text button:hover {
+    background-color: #FB5A0F;
+}
+
+.text button>a:hover {
     color: #fff;
 }
 
@@ -375,7 +385,7 @@ main {
     background-color: #f6f6f6;
 }
 
-.WhatWeDo section  {
+.WhatWeDo section {
     max-width: 1200px;
     margin: auto;
 }
@@ -389,6 +399,28 @@ main {
     letter-spacing: 0.64px;
     text-align: center;
     padding-bottom: 40px;
+}
+
+.WhatWeDo article:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.WhatWeDo article:last-child a {
+    background-color: #fff;
+    color: #FB5A0F;
+    text-decoration: none;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0.64px;
+    padding: 10px;
+}
+
+.WhatWeDo article:last-child a:hover {
+    background-color: #FB5A0F;
+    color: #fff;
 }
 
 .card_check i {
@@ -431,7 +463,96 @@ main {
     padding-bottom: 40px;
 }
 
+.card_check div span h1:hover {
+    color: #FB5A0F;
+}
+
 /* WhatWeDo end*/
+/* Welding_Expert */
+
+.Welding_Expert section {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0 70px 0 ;
+}
+
+.Welding_Expert section article {
+    display: flex;
+    width: 50%;
+}
+
+.Welding_Expert section article div h1 {
+    font-size: 32px;
+}
+
+.Welding_Expert section article div p {
+    font-size: 14px;
+    color: #79787f;
+    font-size: 14px;
+    line-height: 23.002px;
+    padding: 0px 10px 10px 0px;
+    text-align: left;
+}
+
+.Welding_Expert section article div h2 {
+    color: #1e1d24;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    line-height: 25.92px;
+    padding: 0px 0px 2px;
+    text-align: left;
+}
+
+.Welding_Expert section article div nav i {
+    padding-right: 5px;
+    font-size: 20px;
+    color: #FB5A0F;
+}
+
+.Welding_Expert section article div nav li {
+    line-height: 30px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.Welding_Expert section article:last-child div img {
+    width: 239px;
+}
+
+.card_img_left {
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.card_img_left h2 {
+    font-size: 18px;
+}
+
+.card_img_right h2 {
+    font-size: 18px;
+}
+
+.card_img_right {
+    padding-left: 20px;
+}
+
+.card_img_right a,
+.card_img_left a {
+    display: flex;
+    align-items: end;
+    font-size: 14px;
+    text-decoration: none;
+    color: #FB5A0F;
+
+}
+.card_img_right a{
+    align-items: end;
+}
+
+
+/* Welding_Expert end */
 
 
 /* main end */
