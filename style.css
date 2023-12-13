@@ -97,7 +97,7 @@ main {
 }
 
 /* nav */
-/* Estilos para la barra de navegación */
+
 .navbar {
     background-color: var(--color1);
 }
@@ -965,4 +965,54 @@ button:hover {
 /* button up end*/
 
 /* Footer */
+
+footer {
+    padding: 60px 0;
+    color: #79787f;
+    background-color: var(--color4);
+}
+
+footer section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer section article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 0px 20px;
+    align-self: start;
+}
+
+footer section article h1 {
+    color: var(--color3);
+    padding-bottom: 1rem;
+}
+
+.f_services li,
+.f_product li {
+    list-style: none;
+}
+
+.f_services li:hover,
+.f_product li:hover {
+    color: var(--color1);
+}
+
+.f_services li i:hover,
+.f_product li i:hover {
+    color: var(--color3);
+}
+
+.f_services li i,
+.f_product li i {
+    padding: 10px;
+    color: var(--color1);
+}
+
 /*  Footer end */
