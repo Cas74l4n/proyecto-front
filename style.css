@@ -663,6 +663,25 @@ article.expanded .text-container {
     position: relative;
 }
 
+.banner div:first-child {
+    margin: auto;
+    padding: 16px 0;
+    max-width: 1000px;
+    background-color: rgb(234, 236, 238, .5);
+}
+
+.banner .text-white {
+    font-size: 32px;
+    color: var(--color4)
+}
+
+.call-button i {
+    padding: 23px;
+    border-radius: 50%;
+    background-color: var(--color3);
+    font-size: 50px;
+}
+
 /* Parrrax end */
 /* Teams */
 .Team section {
@@ -797,4 +816,158 @@ article.expanded .text-container {
 }
 
 /* Acordeon End */
+
+/* Carrucel */
+
+.ancho {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#slider1 {
+    padding: 60px 0 70px 0;
+
+}
+
+.overview .card22 {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    height: 120px;
+}
+
+.overview .card22 img {
+    width: 200px;
+    height: 80px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    padding: 0px 20px 30px 20px;
+}
+
+.Fancy section div {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    padding: 0px 20px 30px 20px;
+}
+
+.gale {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gale img {
+    width: 320px;
+    height: 213px;
+}
+
+.Fancy {
+    padding: 60px 0 70px 0;
+}
+
+.video section article img {
+    width: 100%;
+}
+
+.video section article {
+    position: relative;
+}
+
+.video-container i {
+    position: absolute;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Slider End */
+
+/* Fomrulairo */
+
+.formulario {
+    padding: 60px 0 70px 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.formulario article div h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 0px 20px 30px 20px;
+}
+
+.container2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Formulario ENd*/
+
 /* main end */
+/* button up*/
+.button-up {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color3);
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+}
+
+.button-up:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* button up end*/
+
+/* Footer */
+/*  Footer end */

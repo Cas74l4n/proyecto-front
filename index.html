@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 
     <script src="js/responsiveslides.min.js"></script>
@@ -148,8 +150,8 @@
                     </div>
                 </article>
             </article>
-
         </section>
+        <!--  -->
 
         <section class="slider">
             <article class="slider-container">
@@ -396,18 +398,18 @@
         </section>
 
         <section class="banner">
-            <div class="opacity">
-                <div class="call-box text-center">
-                    <h3 class="text-white mt-5 mb-4">Looking For a first Class Business Plan Consultant?</h3>
-                    <h3 class="text-white mb-4">Let's Start Talking Now About Next Project</h3>
-                    <h2 class="text-white mb-4">+92-212-696-0000</h2>
+            <article>
+                <div>
+                    <h3 class="text-white ">Looking For a first Class Business Plan Consultant?</h3>
+                    <h3 class="text-white ">Let's Start Talking Now About Next Project</h3>
+                    <h2 class="text-white ">+92-212-696-0000</h2>
                     <div class="call">
                         <span class="call-button">
-                            <i class="fas fa-phone"></i>
+                            <a href="#"><i class="bi bi-telephone-fill"></i></a>
                         </span>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
 
 
@@ -483,7 +485,6 @@
                 <article class="title_why">
                     <h1>WHY Irozo!</h1>
                 </article>
-
                 <!--  <article class="container">
                     <div id="menu1">
                         <a href="#menu1">About Company</a>
@@ -608,18 +609,116 @@
                         </div>
                     </article>
                 </section>
-
-
-
             </section>
         </section>
 
+        <section id="slider1">
+            <div class="container1">
+                <h1>We Work With</h1>
+            </div>
+            <div class="viewport ancho">
+                <div class="overview">
+                    <article class="card22">
+                        <img src="img/brand-1-1.png" alt="" />
+                    </article>
 
+                    <article class="card22 ">
+                        <img src="img/brand-2-1.png" alt="" />
+                    </article>
 
+                    <article class="card22">
+                        <img src="img/brand-3-1.png" alt="" />
+                    </article>
 
+                    <article class="card22">
+                        <img src="img/brand-4-1.png" alt="" />
+                    </article>
+
+                    <article class="card22">
+                        <img src="img/brand-5-1.png" alt="" />
+                    </article>
+
+                    <article class="card22">
+                        <img src="img/brand-6-1.png" alt="" />
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="ancho Fancy">
+            <div class="container1">
+                <h1>Nuestos proyectos</h1>
+            </div>
+            <section class="ancho">
+                <article class="gale">
+                    <a href="img/img-14.jpg" data-fancybox="gallery">
+                        <img src="img/img-14.jpg" alt="">
+                    </a>
+                    <a href="img/img-11.jpg" data-fancybox="gallery">
+                        <img src="img/img-11.jpg" alt="">
+                    </a>
+                    <a href="img/img-13.jpg" data-fancybox="gallery">
+                        <img src="img/img-13.jpg" alt="">
+                    </a>
+                    <a href="img/img-16.jpg" data-fancybox="gallery">
+                        <img src="img/img-16.jpg" alt="">
+                    </a>
+                    <a href="img/img-17.jpg" data-fancybox="gallery">
+                        <img src="img/img-17.jpg" alt="">
+                    </a>
+                    <a href="img/img-4.jpg" data-fancybox="gallery">
+                        <img src="img/img-4.jpg" alt="">
+                    </a>
+                    <a href="img/img-6.jpg" data-fancybox="gallery">
+                        <img src="img/img-6.jpg" alt="">
+                    </a>
+                </article>
+            </section>
+        </section>
+
+        <section class="video">
+            <section>
+                <article>
+                    <img src="img/img-17-1.jpg" alt="">
+                    <div></div>
+                    <div class="video-container">
+                        <a data-fancybox href="https://youtu.be/PBKMTomhZX4?si=Usv8Ff_b-TfTOdRz">
+                            <i class="bi bi-play-btn-fill"></i>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="formulario ">
+            <article>
+                <div>
+                    <h1>Formulario de Contacto</h1>
+                </div>
+                <div class="container2"></div>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                </div>
+            </article>
+        </section>
 
     </main>
-    <footer></footer>
+
+    <div class="button-up">
+        <i class="bi bi-arrow-up-short"></i>
+    </div>
+    <footer>
+    </footer>
 
 
     <script>
@@ -646,7 +745,64 @@
         }).init();
 
 
+        /* carrucel Automatico */
+        $(document).ready(function () {
+            var slider = tns({
+                container: '.overview',
+                // mode: 'gallery',
+                // animateNormal: 'animated',
+                // animateIn: 'flipInY',
+                // animateOut: 'flipOutY',
+                mouseDrag: true,
+                // autoHeight: true,
+                // autoWidth: true,
+                controls: false,
+                nav: false,
+                navPosition: 'bottom',
+                slideBy: 'page',
+                autoplay: true,
+                autoplayButtonOutput: false,
+                // autoplayText: ["start yo", "stop yo"],
+                speed: 600,
+                arrowKeys: true,
+                edgePadding: 75,
+                edgePadding: 0,
+                gutter: 10,
+                gutter: 0,
+                responsive: {
+                    // 640px-699px
+                    640: {
+                        edgePadding: 75,
+                        gutter: 10,
+                        items: 2
+                    },
+                    // 700px-899px
+                    700: {
+                        edgePadding: 0,
+                        gutter: 0,
+                        items: 3
+                    },
+                    // 900px or higher
+                    900: {
+                        items: 5
+                    }
+                }
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('[data-fancybox]').fancybox({
+                type: 'iframe',
+                iframe: {
+                    preload: false
+                }
+            });
+        });
+
+
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </body>
 
 </html>
