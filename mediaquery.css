@@ -347,9 +347,24 @@
         width: 200px;
         height: 80px;
     }
-    .card div img{
+
+    .card div img {
         width: 100%;
     }
-    
+
+    footer section {
+        flex-direction: column;
+    }
+
+    footer section article {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        align-self: start;
+    }
+
+
 
 }
