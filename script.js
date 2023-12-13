@@ -106,8 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-alert('Please wait');
-
 /* Menu */
 const menuIcon = document.querySelector(".menu-icon");
 const nav = document.querySelector("nav");
