@@ -8,6 +8,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <script src="script.js"></script>
+
+
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="wow.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.tinycarousel.js"></script>
+    <script src="js/jquery.tinycarousel.min.js"></script>
+    <script src="fancybox/jquery.fancybox.js"></script>
+
+    <!-- Jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+    <!--  -->
     <title>Document</title>
 </head>
 
@@ -323,7 +351,7 @@
         <section class="Welding_Expert">
             <section>
                 <article>
-                    <div>
+                    <div class="uno">
                         <h1>Meet welding Experts</h1>
                         <p>Besides our experts are good welding, they are skilled, licensed and certified. Gates and
                             Fence of Glasgow City Library</p>
@@ -338,26 +366,287 @@
                         <img src="img/medal-2.webp" alt="medalla plata">
                     </div>
                 </article>
-                <article>
+                <article class="animated-card" onclick="toggleCard()">
                     <div class="card_img_left">
                         <img src="img/img-8.jpg" alt="">
-                        <h2>24 Hour Emergency Service</h2>
-                        <p>We are on the line 24 hour because we understand that our clients could need help any time. Please contact us and our emergency team will be at your place to resolve the issue. We are always on duty of your comfort and security!</p>
-                        <a href="#">VIEW DETAILS <i class="bi bi-chevron-right"></i></a>
+                        <div class="text-container">
+                            <span class="span">More ...</span>
+                            <span class="span1"></span>
+                            <h2>24 Hour Emergency Service</h2>
+                            <p>We are on the line 24 hour because we understand that our clients could need help any
+                                time. Please contact us and our emergency team will be at your place to resolve the
+                                issue. We are always on duty of your comfort and security!</p>
+                            <a href="#" class="details-link">VIEW DETAILS <i class="bi bi-chevron-right"></i></a>
+                        </div>
                     </div>
                     <div class="card_img_right">
                         <img src="img/img-14.jpg" alt="">
-                        <h2>25 Years Experience</h2>
-                        <p>Our company has a rich experience in welding services as we have been working since 1992. We know what our clients need and we are always ready to meet any demand. We love non-standard projects as we can show all the creative skills we have!</p>
-                        <a href="#">VIEW DETAILS <i class="bi bi-chevron-right"></i></a>
+                        <div class="text-container">
+                            <span class="span">More ...</span>
+                            <span class="span1"></span>
+                            <h2>25 Years Experience</h2>
+                            <p>Our company has a rich experience in welding services as we have been working since 1992.
+                                We know what our clients need and we are always ready to meet any demand. We love
+                                non-standard projects as we can show all the creative skills we have!</p>
+                            <a href="#" class="details-link">VIEW DETAILS <i class="bi bi-chevron-right"></i></a>
+                        </div>
                     </div>
                 </article>
             </section>
-
         </section>
+
+        <section class="banner">
+            <div class="opacity">
+                <div class="call-box text-center">
+                    <h3 class="text-white mt-5 mb-4">Looking For a first Class Business Plan Consultant?</h3>
+                    <h3 class="text-white mb-4">Let's Start Talking Now About Next Project</h3>
+                    <h2 class="text-white mb-4">+92-212-696-0000</h2>
+                    <div class="call">
+                        <span class="call-button">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="Team">
+            <section>
+                <article>
+                    <h1>Our Team</h1>
+                    <p>Experienced and skilled repairmen will free you from many problems! You’ll definitely will be
+                        pleased with the result as we guarantee the best service!</p>
+                </article>
+                <article>
+                    <div>
+                        <img src="img/team-1-1.jpg" alt="">
+                        <span>
+                            <h3>Jim Harris</h3>
+                            <p>Senior electrician</p>
+                            <p>Jim has over 10 years of experience working as an electrician here. Jim knows about
+                                plumbing everything and even more!</p>
+                        </span>
+                    </div>
+                    <!---->
+                    <div>
+                        <img src="img/team-2-1.jpg" alt="">
+                        <span>
+                            <h3>Tom Allen</h3>
+                            <p>Plumber</p>
+                            <p>Tom knows about plumbing everything and even more! He successfully completed
+                                apprenticeship program and got a plumber license in 2003.</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="img/team-3-1.jpg" alt="">
+                        <span>
+                            <h3>Jeremy Scott</h3>
+                            <p>Painter</p>
+                            <p>Jeremy works as a painter for 4 years. He works with paint very delicate. Jeremy knows
+                                about everything and even</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="img/team-4-1.jpg" alt="">
+                        <span>
+                            <h3>Bred Cooper</h3>
+                            <p>Housemaid</p>
+                            <p>Bred's motto is “cleanliness is next to godliness”. He works here since 2010. Bred knows
+                                about everything and even more!</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="img/team-5-1.jpg" alt="">
+                        <span>
+                            <h3>Jake Bill</h3>
+                            <p>Gardner</p>
+                            <p>Jake is in charge of landscaping. He knows how to deal with the lawn, flowers, shrubs,
+                                etc. Jake knows about</p>
+                        </span>
+                    </div>
+                    <div>
+                        <img src="img/team-6-1.jpg" alt="">
+                        <span>
+                            <h3>David Anderson</h3>
+                            <p>Roofer</p>
+                            <p>If you have any issues with the roof, David has a great experience and knowledge at
+                                roofing. David knows about</p>
+                        </span>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="Why">
+            <section>
+                <article class="title_why">
+                    <h1>WHY Irozo!</h1>
+                </article>
+
+                <!--  <article class="container">
+                    <div id="menu1">
+                        <a href="#menu1">About Company</a>
+                        <p>We are a company providing a wide range of maintenance and many other services needed to make your life comfortable and happy. Our high-class experts fix any malfunction and install any equipment in your house.</p>
+                    </div>
+
+                    <div id="menu2">
+                        <a href="#menu2">Our Mission</a>
+                        <p>We work to ensure people’s comfort at their home, and to provide the best and the fastest help at fair prices. We stand for quality, safety and credibility, so you could be sure about our work.</p>
+                    </div>
+
+                    <div id="menu3">
+                        <a href="#menu3">Our Vision</a>
+                        <p>We have been working for years to improve our skills, to expand the spheres of our work and to use the latest tools, so you could receive better results. We strive to enhance our experts’ skills and use high-tech technology.</p>
+                    </div>
+
+                    <div id="menu4">
+                        <a href="#menu4">Our Goal</a>
+                        <p>The main goal is to provide our clients with the most complete list of services. We aim to expand our team of experts as there are more and more spheres of maintenance that we want to work with.</p>
+                    </div>
+                </article> -->
+                <section class="papa_caja">
+                    <article class="container">
+                        <div class="accordion" class="ancho">
+                            <div class="title">
+                                <h1>About Company</h1>
+                                <i id="flecha" class="bi bi-arrow-up-circle"></i>
+                            </div>
+                            <article class="accordion-content">
+                                <span>
+                                    <img src="img/img-6.jpg" alt="">
+                                    <p>We are a company providing a wide range of maintenance and many other services
+                                        needed
+                                        to
+                                        make your life comfortable and happy. Our high-class experts fix any malfunction
+                                        and
+                                        install any equipment in your house.</p>
+                                </span>
+                            </article>
+                        </div>
+                        <!--  -->
+                        <div class="accordion" class="ancho">
+                            <div class="title">
+                                <h1>Our Mission</h1>
+                                <i id="flecha" class="bi bi-arrow-up-circle"></i>
+                            </div>
+                            <article class="accordion-content">
+                                <span>
+                                    <img src="img/img-17.jpg" alt="">
+                                    <p>We work to ensure people’s comfort at their home, and to provide the best and the
+                                        fastest
+                                        help at fair prices. We stand for quality, safety and credibility, so you could
+                                        be
+                                        sure
+                                        about our work.</p>
+                                </span>
+
+                            </article>
+                        </div>
+                        <div class="accordion" class="ancho">
+                            <div class="title">
+                                <h1>Our Vision</h1>
+                                <i id="flecha" class="bi bi-arrow-up-circle"></i>
+                            </div>
+                            <article class="accordion-content">
+                                <span>
+                                    <img src="img/img-8.jpg" alt="">
+                                    <p>We have been working for years to improve our skills, to expand the spheres of
+                                        our
+                                        work
+                                        and to use the latest tools, so you could receive better results. We strive to
+                                        enhance
+                                        our experts’ skills and use high-tech technology.</p>
+                                </span>
+                            </article>
+                        </div>
+
+                        <div class="accordion" class="ancho">
+                            <div class="title">
+                                <h1>Our Goal</h1>
+                                <i id="flecha" class="bi bi-arrow-up-circle"></i>
+                            </div>
+                            <article class="accordion-content">
+                                <span>
+                                    <img src="img/img-14.jpg" alt="">
+                                    <p>The main goal is to provide our clients with the most complete list of services.
+                                        We
+                                        aim
+                                        to expand our team of experts as there are more and more spheres of maintenance
+                                        that
+                                        we
+                                        want to work with.</p>
+                                </span>
+                            </article>
+                        </div>
+                    </article>
+
+                    <article class="Card_anime">
+                        <div class="  wow animate__animated animate__swing">
+                            <i class="bi bi-clock"></i>
+                            <h2>Always Available</h2>
+                            <p>We accept requests and phone calls 24/7 so you could resolve any problem whenever you
+                                need. Our emergency team will be at your place...</p>
+                        </div>
+                        <div class=" wow animate__animated animate__bounceIn">
+                            <i class="bi bi-tags-fill"></i>
+                            <h2>Qualified Agents</h2>
+                            <p>All our team members are high-qualified, educated and skilled agents. All of them are
+                                being trained according to the latest technologies.All our team</p>
+                        </div>
+                        <div class=" wow animate__animated animate__bounceInDown">
+                            <i class="bi bi-piggy-bank"></i>
+                            <h2>Fair Prices</h2>
+                            <p>Our prices are both fair and affordable for all people. We offer flexible discount system
+                                so you could use any service you need.</p>
+                        </div>
+                        <div class="wow animate__animated animate__swing">
+                            <i class="bi bi-star"></i>
+                            <h2>Best Offers</h2>
+                            <p>We provide discounts on the most popular services and on the season services, so you
+                                could definitely receive any help without delay.</p>
+                        </div>
+                    </article>
+                </section>
+
+
+
+            </section>
+        </section>
+
+
+
+
+
     </main>
     <footer></footer>
-    <script src="script.js"></script>
+
+
+    <script>
+        /* Modal */
+        // Abre el primer elemento al cargar la página
+        $(".accordion-content:first").slideDown();
+        $(".rotateflecha:first").addClass("rotateflecha");
+        $(".title").click(function () {
+            var t = $(this);
+            var tp = t.next();
+            $(".accordion-content").not(tp).slideUp();
+            $(".rotateflecha").removeClass("rotateflecha");
+            tp.slideToggle();
+            t.find(".bi").toggleClass("rotateflecha");
+        });
+
+        /* WOW */
+        new WOW({
+            boxClass: 'wow', // clase para animar
+            animateClass: 'animate__', // prefijo para la clase de animación
+            offset: 0, // desplazamiento del contenedor
+            mobile: true, // permitir animaciones en dispositivos móviles
+            live: true // detectar cambios en el DOM
+        }).init();
+
+
+    </script>
 </body>
 
 </html>

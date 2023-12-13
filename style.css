@@ -3,74 +3,92 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color1: #FB5A0F;
+    --color2: #79787f;
+    --color3: #fff;
+    --color4: #1E1D24;
+}
+
+/* Estilos generales para el cuerpo del documento */
 body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.643;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0px;
     text-align: left;
-    color: #79787f;
     text-transform: none;
 }
 
+/* Estilos para la sección del encabezado */
 header>section {
     padding: 20px 0;
 }
 
+/* Estilos para el artículo dentro del encabezado */
 header article {
     display: flex;
     max-width: 1200px;
     margin: auto;
 }
 
+/* Estilos para el contenedor div dentro del encabezado */
 header div {
     display: flex;
     margin: auto;
     align-items: center;
+    color: var(--color4);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42em;
 }
 
+/* Estilos para el párrafo dentro del contenedor div */
 header div p {
     padding-left: 12px;
-    color: #79787f;
 }
 
+/* Estilos específicos para el primer párrafo dentro del contenedor div */
 header div:first-child p {
     font-size: 12px;
     font-weight: 400;
     line-height: 1em;
 }
 
-header div {
-    color: #1E1D24;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42em;
-}
-
+/* Estilos para el ícono dentro del contenedor div */
 header div i {
     font-size: 32px;
-    color: #FB5A0F;
+    color: var(--color1);
 }
 
+/* Estilos para el botón dentro del artículo del encabezado */
 header article button {
-    border: #FB5A0F;
+    border: var(--color1);
     padding: 0 10px;
-    background-color: #FB5A0F;
+    background-color: var(--color1);
 }
 
+/* Estilos para el contenido dentro del botón */
 header article button * {
     font-size: 14px;
-    color: white;
+    color: var(--color3);
     text-decoration: none;
 }
 
+/* Estilos al pasar el ratón sobre el botón */
 header article button:hover {
-    border: #1E1D24;
-    background-color: #1E1D24;
-    color: white;
+    border: var(--color4);
+    background-color: var(--color4);
+    color: var(--color3);
+}
+
+/* Estilos específicos para el color de texto */
+header div p,
+header div:first-child p {
+    color: var(--color2);
 }
 
 /* main */
@@ -79,19 +97,19 @@ main {
 }
 
 /* nav */
+/* Estilos para la barra de navegación */
 .navbar {
-    background-color: #FB5A0F;
+    background-color: var(--color1);
 }
 
+/* Estilos para la barra principal */
 .bar {
     display: flex;
-}
-
-.bar {
     max-width: 1200px;
     margin: auto;
 }
 
+/* Estilos para el contenido del artículo en la barra */
 .bar article {
     height: 60.391px;
     padding: auto;
@@ -99,20 +117,27 @@ main {
     align-items: center;
 }
 
+/* Estilos para la navegación principal */
 .main-navigation {
     width: 70%;
 }
 
+/* Estilos para el icono de búsqueda */
 .search-icon {
     font-weight: 400;
     width: 30%;
     display: flex;
-    justify-content: end;
-    color: white;
+    justify-content: flex-end;
+    color: var(--color3);
 }
 
+/* Estilos para el ícono de búsqueda al pasar el ratón */
 .search-icon div i:hover {
-    color: #1E1D24;
+    color: var(--color4);
+}
+
+.main-navigation nav {
+    display: flex;
 }
 
 .main-navigation nav {
@@ -233,6 +258,31 @@ main {
     font-size: 12px;
 }
 
+.text button {
+    position: absolute;
+    padding: 10px;
+    border: #fff;
+    text-decoration: none;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.text button {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.text button:last-child {
+    left: 280px;
+}
+
+.text a {
+    margin: 20px 10px;
+    text-decoration: none;
+    color: #FB5A0F;
+}
+
+/* Flechas de Navegacion */
 .navigation-arrows {
     position: absolute;
     top: 50%;
@@ -258,33 +308,6 @@ main {
     color: #fff;
 }
 
-.text button {
-    position: absolute;
-    padding: 10px;
-    border: #fff;
-    text-decoration: none;
-    background-color: #fff;
-    z-index: 999;
-}
-
-.text button {
-    text-decoration: none;
-    background-color: #fff;
-}
-
-.text button:last-child {
-    left: 280px;
-}
-
-.text a {
-    margin: 20px 10px;
-    text-decoration: none;
-    color: #FB5A0F;
-}
-
-/* .text button a:hover {
-    color: #fff;
-}  */
 .text button:hover {
     background-color: #FB5A0F;
 }
@@ -463,6 +486,10 @@ main {
     padding-bottom: 40px;
 }
 
+.card_check div span h1 {
+    width: fit-content;
+}
+
 .card_check div span h1:hover {
     color: #FB5A0F;
 }
@@ -474,7 +501,7 @@ main {
     display: flex;
     max-width: 1200px;
     margin: auto;
-    padding: 60px 0 70px 0 ;
+    padding: 60px 0 70px 0;
 }
 
 .Welding_Expert section article {
@@ -545,14 +572,229 @@ main {
     font-size: 14px;
     text-decoration: none;
     color: #FB5A0F;
-
+    width: 113px;
 }
-.card_img_right a{
-    align-items: end;
+
+.card_img_right a {
+    padding-top: 5px;
+}
+
+.card_img_left a:hover,
+.card_img_right a:hover {
+    color: #79787f;
+}
+
+/**/
+
+.text-container .span {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.span1 {
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    width: 205px;
+    height: 300px;
+    background-color: #fff;
+}
+
+article.expanded .span1 {
+    top: 0;
+    visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.Welding_Expert article {
+    display: flex;
+    overflow: hidden;
+}
+
+.card_img_left,
+.card_img_right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.card_img_right>.text-container {
+    margin-left: 20px;
+}
+
+.card_img_left>.text-container,
+.card_img_right>.text-container {
+    position: absolute;
+    top: 29%;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transition: top 0.5s;
+    visibility: visible;
+}
+
+.details-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+article.expanded .text-container {
+    top: 0;
+    visibility: visible;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 
 /* Welding_Expert end */
 
+/* Parrrax */
+.banner {
+    background: url("../img/cta-bg.jpg") no-repeat fixed center center / cover;
+    display: block;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 260px;
+    text-align: center;
+    position: relative;
+}
 
+/* Parrrax end */
+/* Teams */
+.Team section {
+    padding: 60px 0 70px 0;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Team section article:first-child h1 {
+    font-size: 32px;
+    padding: 0px 20px 30px 20px;
+}
+
+.Team section article:first-child p {
+    font-size: 14px;
+    padding: 0px 20px 30px 20px;
+}
+
+.Team section article:last-child {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Team section article:last-child div {
+    width: 360px;
+    display: block;
+    color: #1E1D24;
+}
+
+.Team section article:last-child div img {
+    transition: filter 0.3s ease-in-out;
+    filter: grayscale(0.4) blur(8px);
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+}
+
+.Team section article:last-child img:hover {
+    filter: grayscale(0) blur(0);
+}
+
+/* Teams end*/
+
+/* Acordeon */
+.Why section {
+    padding: 60px 0 70px 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Why section .title_why h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 0px 20px 30px 20px;
+}
+
+.Why section .container {
+    width: 50%;
+
+}
+
+/*
+.Why section article div p {
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    background: #e4e4e4;
+    transition: all 0.2s ease-in;
+}
+
+.Why section article a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 30px 10px;
+    border-bottom: 2px solid gray;
+}
+
+.Why section article div:target p {
+    max-height: 120px;
+    padding: 10px;
+} 
+*/
+
+.container .title {
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 2px solid gray;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+}
+
+.accordion-content span {
+    display: flex;
+}
+
+.accordion-content span img {
+    width: 245px;
+    padding-right: 10px;
+}
+
+.rotateflecha {
+    transition: all .5s;
+    transform: rotate(180deg);
+}
+
+.Card_anime div {
+    width: 260px;
+    padding: 15px 10px 10px 10px;
+    border: 1px solid red;
+}
+
+.Why section .Card_anime {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.papa_caja {
+    display: flex;
+}
+
+/* Acordeon End */
 /* main end */

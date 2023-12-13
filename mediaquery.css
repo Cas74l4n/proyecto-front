@@ -16,6 +16,7 @@
         margin-left: 20.078px;
         display: inline-flex;
     }
+
     header button {
         margin-right: 18.078px;
         display: inline-flex;
@@ -52,19 +53,17 @@
     .main-navigation nav ul {
         padding: 6px 6px;
     }
-    
+
     .main-navigation nav ul:hover {
         padding: 6px 6px;
     }
-        
-
 }
 
 @media screen and (min-width:889px) and (max-width: 976px) {
     .main-navigation nav ul {
         padding: 6px 9px;
     }
-    
+
     .main-navigation nav ul:hover {
         padding: 6px 9px;
     }
@@ -74,9 +73,211 @@
     .main-navigation nav ul {
         padding: 6px 4px;
     }
-    
+
     .main-navigation nav ul:hover {
         padding: 6px 4px;
     }
+
+    .elem1,
+    button {
+        margin: auto;
+    }
 }
 
+@media screen and (min-width:760px) and (max-width: 1440px) {
+    .slide>.text {
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        padding-bottom: 50px;
+    }
+
+    .text button {
+        left: 4%;
+        padding: 10px;
+    }
+
+    .text button:last-child {
+        left: 35%;
+        padding: 10px;
+    }
+
+    .text a {
+        margin: 10px 10px;
+    }
+}
+
+/* movile 100% */
+@media screen and (min-width:490px) and (max-width: 759px) {
+    .text button:last-child {
+        top: 85%;
+        left: 2%;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width: 489px) {
+    .text button:last-child {
+        top: 85%;
+        left: 3%;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width: 760px) {
+    header article button {
+        margin: auto;
+    }
+
+    header section article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 1px;
+        column-gap: 70px;
+    }
+
+
+    .elem1,
+    button {
+        margin: auto;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .slide>.text {
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        padding-bottom: 130px;
+    }
+
+    .text button {
+        width: 250px;
+        padding: 5px;
+    }
+
+    .text button:first-child {
+        top: 90%;
+    }
+
+    .text a {
+        display: flex;
+        justify-content: center;
+        margin: 10px 10px;
+    }
+
+    .text {
+        padding: 10px;
+    }
+
+    .text h1 {
+        font-size: 32px;
+    }
+
+    .text h3 {
+        font-size: 18px;
+    }
+
+    .text h4 {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    .card_check {
+        padding: 0 10px;
+    }
+
+    /* Welding_Expert */
+
+    .Welding_Expert section {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: auto;
+        padding: 60px 0 70px 0;
+    }
+
+    .uno {
+        padding: 0 10px;
+    }
+
+    .Welding_Expert section article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Welding_Expert section article div p {
+        padding: 0px 10px 10px 0px;
+    }
+
+    .Welding_Expert section article div h2 {
+        padding: 0px 0px 2px;
+    }
+
+
+    .Welding_Expert section article:last-child div img {
+        width: 100%;
+    }
+
+    .card_img_right,
+    .card_img_left {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /**/
+
+    .card_img_right>.text-container {
+        margin-left: 0px;
+    }
+
+    .text-container span {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .Welding_Expert article {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .card_img_left,
+    .card_img_right {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card_img_left>.text-container,
+    .card_img_right>.text-container {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.9);
+        clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+        transition: top 0.5s;
+        visibility: visible;
+    }
+
+    .details-link {
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    article.expanded .text-container {
+        top: 0;
+        visibility: visible;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+}

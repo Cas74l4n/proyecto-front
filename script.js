@@ -48,3 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+function toggleCard() {
+    const article = document.querySelector('.animated-card');
+    article.classList.toggle('expanded');
+}
+
